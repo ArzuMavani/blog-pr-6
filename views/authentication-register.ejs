@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class=" text-gray-800 min-h-screen flex items-center justify-center"style="background-color:black;">
+    <div class="w-full max-w-md p-8  rounded-lg shadow-xl">
+        <h2 class="text-3xl font-bold mb-6 text-center "style="font-family:cursive;color:white ">Sign Up</h2>
+        <form action="/signup" method="post" class="space-y-6">
+            <div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1" name="username"style="box-shadow:0px 0px 7px 0px gray;background-color:transparent"
+                        required class="w-full px-3 py-2  rounded-md shadow-sm " />
+                </div>
+                <div class="mb-4">
+                    <input type="email" placeholder="Email Address" aria-label="Email" aria-describedby="basic-addon1" name="email"style="box-shadow:0px 0px 7px 0px gray;background-color:transparent"
+                        required class="w-full px-3 py-2 rounded-md shadow-sm " />
+                </div>
+                <div class="mb-4">
+                    <input type="password" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1" name="password"style="box-shadow:0px 0px 7px 0px gray;background-color:transparent"
+                        required class="w-full px-3 py-2  rounded-md shadow-sm " />
+                </div>
+                <div class="mb-4">
+                    <input type="text" placeholder="Phone" name="phone"style="box-shadow:0px 0px 7px 0px gray;background-color:transparent" required class="w-full px-3 py-2 rounded-md shadow-sm " />
+                </div>
+            </div>
+
+            <div class="flex items-center justify-between">
+                <button type="submit" style="box-shadow:inset 0px 0px 10px 0px rgb(22, 83, 21);background-color:transparent;color:rgb(22, 83, 21)"
+                    class="w-full text-white px-4 py-2 rounded-md shadow hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-75 text-md">
+                    Sign Up
+                </button>
+            </div>
+
+            <div class="text-center mt-6">
+                <a href="/login" class="text-sm text-blue-500 hover:underline focus:outline-none">Login</a>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
